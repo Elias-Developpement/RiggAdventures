@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Illumnia" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Illumnia" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/SDL1.2/include" />
+				</Compiler>
+				<Linker>
+					<Add library="C:/Program Files (x86)/CodeBlocks/SDL1.2/lib/SDL_image.lib" />
+					<Add library="C:/Program Files (x86)/CodeBlocks/SDL1.2/lib/SDL_ttf.lib" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/SDL1.2/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Illumnia" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="$(#sdl.include)" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="SDLmain" />
+			<Add library="SDL.dll" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add directory="$(#sdl.lib)" />
+		</Linker>
+		<Unit filename="box.cpp" />
+		<Unit filename="box.h" />
+		<Unit filename="camera.h" />
+		<Unit filename="defs.h" />
+		<Unit filename="game.cpp" />
+		<Unit filename="game.h" />
+		<Unit filename="init.cpp" />
+		<Unit filename="init.h" />
+		<Unit filename="input.cpp" />
+		<Unit filename="input.h">
+			<Option compile="1" />
+			<Option link="1" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
+		<Unit filename="map.cpp" />
+		<Unit filename="map.h" />
+		<Unit filename="sprite.cpp" />
+		<Unit filename="sprite.h" />
+		<Unit filename="structs.h" />
+		<Unit filename="time.cpp" />
+		<Unit filename="time.h" />
+		<Unit filename="vector.cpp" />
+		<Unit filename="vector.h" />
+		<Unit filename="windows.cpp" />
+		<Unit filename="windows.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
